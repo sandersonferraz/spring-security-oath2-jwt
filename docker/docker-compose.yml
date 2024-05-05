@@ -1,12 +1,12 @@
 services:
-  postgres:
-    image: postgres:14-alpine
-    container_name: "tb_"
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: client_db
-    volumes:
-      - "/home/san/data/postgres:/var/lib/postgresql/data"
+  mysql:
+    image: mysql:8.0
     ports:
-      - "5432:5432"
+      - "3306:3306"
+    expose:
+      - "3306"
+    environment:
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=123
+      - MYSQL_DATABASE=mydb
+      - MYSQL_ROOT_PASSWORD=123
