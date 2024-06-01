@@ -1,14 +1,10 @@
 package com.san.springsecurity.entity.auth;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Data
-@Getter
-@Setter
+@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "tb_roles")

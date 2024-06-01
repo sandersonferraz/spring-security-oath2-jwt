@@ -6,7 +6,7 @@ spring:
     init:
       mode: always
   datasource:
-    url: jdbc:mysql://localhost:3306/mydb
+    url: jdbc:mysql://localhost:3306/securityDB
     username: admin
     password: 123
     driver-class-name: com.mysql.cj.jdbc.Driver
